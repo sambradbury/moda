@@ -4,8 +4,10 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 
-cwd = os.getcwd()
-source_data = pd.read_csv(cwd + '/data/signing_data.csv')
+dir_path = os.getcwd()
+csv_path = os.path.join(dir_path, 'streamlit/signing_times/data/signing_data.csv')
+source_data = pd.read_csv(csv_path)
+
 test_strategies = source_data['Test Strategy'].unique().tolist()
 devices = source_data['Model Name'].unique().tolist()
 
