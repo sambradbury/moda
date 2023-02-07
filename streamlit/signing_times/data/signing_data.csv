@@ -1,0 +1,127 @@
+Test Strategy,Model Name,UTXOs,Unsigned PSBT (kB),Staging Duration (pre-confirmation),Signing Duration (post-confirmation)
+Simple (2 outputs),Model One,25,20,00:00:03,00:00:16
+Simple (2 outputs),Model T,25,20,00:00:06,00:00:26
+Simple (2 outputs),Nano S,25,20,00:00:03,00:00:59
+Simple (2 outputs),Nano X,25,20,00:00:02,00:00:26
+Simple (2 outputs),Nano S+,25,20,00:00:02,00:00:27
+Simple (2 outputs),Mk3,25,20,00:00:35,00:00:42
+Simple (2 outputs),Mk4,25,20,00:00:28,00:00:33
+Simple (2 outputs),Model One,50,40,00:00:06,00:00:48
+Simple (2 outputs),Model T,50,40,00:00:11,00:01:19
+Simple (2 outputs),Nano S,50,40,00:00:05,00:02:22
+Simple (2 outputs),Nano X,50,40,00:00:03,00:01:08
+Simple (2 outputs),Nano S+,50,40,00:00:03,00:01:06
+Simple (2 outputs),Mk3,50,40,00:01:10,00:02:22
+Simple (2 outputs),Mk4,50,40,00:00:55,00:01:41
+Simple (2 outputs),Model One,100,80,00:00:11,00:02:37
+Simple (2 outputs),Model T,100,80,00:00:21,00:04:37
+Simple (2 outputs),Nano S,100,80,00:00:11,00:06:30
+Simple (2 outputs),Nano X,100,80,00:00:06,00:03:09
+Simple (2 outputs),Nano S+,100,80,00:00:06,00:03:04
+Simple (2 outputs),Mk3,100,80,00:02:27,00:09:45
+Simple (2 outputs),Mk4,100,80,00:02:00,00:08:31
+Simple (2 outputs),Model One,250,248,00:00:26,00:14:39
+Simple (2 outputs),Model T,250,248,00:00:53,00:28:09
+Simple (2 outputs),Nano S,250,248,00:00:32,00:28:21
+Simple (2 outputs),Nano X,250,248,00:00:17,00:14:21
+Simple (2 outputs),Nano S+,250,248,00:00:16,00:14:15
+Simple (2 outputs),Mk3,250,248,,
+Simple (2 outputs),Mk4,250,248,00:05:50,01:06:58
+Simple (2 outputs),Model One,500,474,00:00:51,00:58:55
+Simple (2 outputs),Model T,500,474,00:01:38,01:40:53
+Simple (2 outputs),Nano S,500,474,00:01:00,01:37:31
+Simple (2 outputs),Nano X,500,474,00:00:34,00:52:56
+Simple (2 outputs),Nano S+,500,474,00:00:32,00:49:16
+Simple (2 outputs),Mk3,500,474,,
+Simple (2 outputs),Mk4,500,474,,
+Exchange Simulation (30 outputs),Model One,25,63,00:00:03,00:00:21
+Exchange Simulation (30 outputs),Model T,25,63,00:00:06,00:00:32
+Exchange Simulation (30 outputs),Nano S,25,63,00:00:11,00:00:58
+Exchange Simulation (30 outputs),Nano X,25,63,00:00:06,00:00:27
+Exchange Simulation (30 outputs),Nano S+,25,63,00:00:06,00:00:27
+Exchange Simulation (30 outputs),Mk3,25,63,00:01:02,00:00:46
+Exchange Simulation (30 outputs),Mk4,25,63,00:00:49,00:00:36
+Exchange Simulation (30 outputs),Model One,50,120,00:00:06,00:00:54
+Exchange Simulation (30 outputs),Model T,50,120,00:00:12,00:01:30
+Exchange Simulation (30 outputs),Nano S,50,120,00:00:21,00:02:23
+Exchange Simulation (30 outputs),Nano X,50,120,00:00:12,00:01:07
+Exchange Simulation (30 outputs),Nano S+,50,120,00:00:11,00:01:07
+Exchange Simulation (30 outputs),Mk3,50,120,00:02:00,00:02:29
+Exchange Simulation (30 outputs),Mk4,50,120,00:01:32,00:01:46
+Exchange Simulation (30 outputs),Model One,100,225,00:00:10,00:02:49
+Exchange Simulation (30 outputs),Model T,100,225,00:00:22,00:04:56
+Exchange Simulation (30 outputs),Nano S,100,225,00:00:39,00:06:27
+Exchange Simulation (30 outputs),Nano X,100,225,00:00:24,00:03:09
+Exchange Simulation (30 outputs),Nano S+,100,225,00:00:22,00:03:04
+Exchange Simulation (30 outputs),Mk3,100,225,00:04:03,00:10:00
+Exchange Simulation (30 outputs),Mk4,100,225,00:03:14,00:08:45
+Exchange Simulation (30 outputs),Model One,250,528,00:00:25,00:15:50
+Exchange Simulation (30 outputs),Model T,250,528,00:00:48,00:27:00
+Exchange Simulation (30 outputs),Nano S,250,528,00:01:36,00:28:19
+Exchange Simulation (30 outputs),Nano X,250,528,00:00:57,00:14:21
+Exchange Simulation (30 outputs),Nano S+,250,528,00:00:51,00:13:58
+Exchange Simulation (30 outputs),Mk3,250,528,,
+Exchange Simulation (30 outputs),Mk4,250,528,00:08:32,01:07:20
+Mining Pool Simulation (300 outputs),Model One,25,339,00:00:03,00:00:51
+Mining Pool Simulation (300 outputs),Model T,25,339,00:00:06,00:01:18
+Mining Pool Simulation (300 outputs),Nano S,25,339,00:01:15,00:01:00
+Mining Pool Simulation (300 outputs),Nano X,25,339,00:00:44,00:00:27
+Mining Pool Simulation (300 outputs),Nano S+,25,339,00:00:41,00:00:28
+Mining Pool Simulation (300 outputs),Mk3,25,339,00:04:04,00:01:08
+Mining Pool Simulation (300 outputs),Mk4,25,339,00:03:04,00:00:54
+Mining Pool Simulation (300 outputs),Model One,50,677,00:00:06,00:02:00
+Mining Pool Simulation (300 outputs),Model T,50,677,00:00:11,00:03:06
+Mining Pool Simulation (300 outputs),Nano S,50,677,00:02:28,00:02:24
+Mining Pool Simulation (300 outputs),Nano X,50,677,00:01:25,00:01:09
+Mining Pool Simulation (300 outputs),Nano S+,50,677,00:01:21,00:01:07
+Mining Pool Simulation (300 outputs),Mk3,50,677,,
+Mining Pool Simulation (300 outputs),Mk4,50,677,00:06:14,00:02:28
+Mining Pool Simulation (300 outputs),Model One,100,1352,00:00:11,00:04:59
+Mining Pool Simulation (300 outputs),Model T,100,1352,00:00:22,00:08:01
+Mining Pool Simulation (300 outputs),Nano S,100,1352,00:04:56,00:06:30
+Mining Pool Simulation (300 outputs),Nano X,100,1352,00:02:43,00:03:09
+Mining Pool Simulation (300 outputs),Nano S+,100,1352,00:02:35,00:03:01
+Mining Pool Simulation (300 outputs),Mk3,100,1352,,
+Mining Pool Simulation (300 outputs),Mk4,100,1352,00:13:15,00:10:22
+Mining Pool Simulation (300 outputs),Model One,250,3381,00:00:27,00:20:26
+Mining Pool Simulation (300 outputs),Model T,250,3381,00:00:49,00:34:35
+Mining Pool Simulation (300 outputs),Nano S,250,3381,00:12:20,00:28:24
+Mining Pool Simulation (300 outputs),Nano X,250,3381,00:07:01,00:14:35
+Mining Pool Simulation (300 outputs),Nano S+,250,3381,00:06:26,00:13:58
+Mining Pool Simulation (300 outputs),Mk3,250,3381,,
+Mining Pool Simulation (300 outputs),Mk4,250,3381,,
+F2Pool Simulation (3000 outputs),Model One,2,266,00:00:01,00:00:29
+F2Pool Simulation (3000 outputs),Model T,2,266,00:00:01,00:00:44
+F2Pool Simulation (3000 outputs),Nano S,2,266,00:00:59,00:00:05
+F2Pool Simulation (3000 outputs),Nano X,2,266,00:00:34,00:00:03
+F2Pool Simulation (3000 outputs),Nano S+,2,266,00:00:33,00:00:03
+F2Pool Simulation (3000 outputs),Mk3,2,266,00:02:49,00:00:25
+F2Pool Simulation (3000 outputs),Mk4,2,266,00:02:10,00:00:22
+F2Pool Simulation (3000 outputs),Model One,3,395,00:00:01,00:00:44
+F2Pool Simulation (3000 outputs),Model T,3,395,00:00:01,00:01:08
+F2Pool Simulation (3000 outputs),Nano S,3,395,00:01:27,00:00:07
+F2Pool Simulation (3000 outputs),Nano X,3,395,00:00:51,00:00:04
+F2Pool Simulation (3000 outputs),Nano S+,3,395,00:00:50,00:00:04
+F2Pool Simulation (3000 outputs),Mk3,3,395,,
+F2Pool Simulation (3000 outputs),Mk4,3,395,00:03:12,00:00:30
+F2Pool Simulation (3000 outputs),Model One,10,1295,00:00:02,00:02:23
+F2Pool Simulation (3000 outputs),Model T,10,1295,00:00:03,00:03:47
+F2Pool Simulation (3000 outputs),Nano S,10,1295,00:04:50,00:00:25
+F2Pool Simulation (3000 outputs),Nano X,10,1295,00:02:47,00:00:13
+F2Pool Simulation (3000 outputs),Nano S+,10,1295,00:02:44,00:00:13
+F2Pool Simulation (3000 outputs),Mk3,10,1295,,
+F2Pool Simulation (3000 outputs),Mk4,10,1295,00:10:26,00:01:31
+F2Pool Simulation (3000 outputs),Model One,25,3228,00:00:04,00:06:44
+F2Pool Simulation (3000 outputs),Model T,25,3228,00:00:07,00:09:14
+F2Pool Simulation (3000 outputs),Nano S,25,3228,00:12:00,00:01:08
+F2Pool Simulation (3000 outputs),Nano X,25,3228,00:06:55,00:00:34
+F2Pool Simulation (3000 outputs),Nano S+,25,3228,00:06:37,00:00:35
+F2Pool Simulation (3000 outputs),Mk3,25,3228,,
+F2Pool Simulation (3000 outputs),Mk4,25,3228,,
+F2Pool Simulation (3000 outputs),Model One,100,12886,00:00:16,00:26:28
+F2Pool Simulation (3000 outputs),Model T,100,12886,00:00:25,00:44:47
+F2Pool Simulation (3000 outputs),Nano S,100,12886,00:47:51,00:06:31
+F2Pool Simulation (3000 outputs),Nano X,100,12886,00:26:35,00:03:08
+F2Pool Simulation (3000 outputs),Nano S+,100,12886,00:26:01,00:03:11
+F2Pool Simulation (3000 outputs),Mk3,100,12886,,
+F2Pool Simulation (3000 outputs),Mk4,100,12886,,
