@@ -21,11 +21,11 @@ if submit_button:
     pre_conf_data = source_data.loc[
                                 source_data['Test Strategy'].isin([test_strategy])
                                 & source_data['Model Name'].isin(model_names)]
-    pre_fig = px.line(pre_conf_data, x=y_ax_metric, y='Staging Duration (pre-confirmation)', color='Model Name')
+    pre_fig = px.line(pre_conf_data, x=y_ax_metric, y='Pre-Confirmation Duration (seconds)', color='Model Name')
     pre_fig.update_layout(
         autosize=True,
         title={
-            'text' : 'Staging Duration (pre-confirmation)',
+            'text' : 'Pre-Confirmation Duration',
             'xanchor': 'center'
             }
         )
@@ -35,41 +35,12 @@ if submit_button:
     post_conf_data = source_data.loc[
                                 source_data['Test Strategy'].isin([test_strategy])
                                 & source_data['Model Name'].isin(model_names)]
-    post_fig = px.line(post_conf_data, x=y_ax_metric, y='Signing Duration (post-confirmation)', color='Model Name')
+    post_fig = px.line(post_conf_data, x=y_ax_metric, y='Post-Confirmation Duration (seconds)', color='Model Name')
     post_fig.update_layout(
         autosize=True,
         title={
-            'text' : 'Signing Duration (post-confirmation)',
+            'text' : 'Post-Confirmation Duration',
             'xanchor': 'center'
             }
         )
     st.plotly_chart(post_fig, use_container_width=True)
-
-
-
-
-# mainFig = go.Figure()
-
-# x_data=df['UTXOs'].tolist()
-# y_data=df['Staging Duration (pre-confirmation)'].tolist()
-
-# trace = go.Scatter3d(x=x_data, y=y_data)
-
-# trace.marker.size=1
-
-# mainFig.add_trace(trace)
-
-
-# layout = Layout(
-#     showlegend=True,
-#     scene=Scene(
-#         xaxis=XAxis(title='Bitcoin Days'),
-#         yaxis=YAxis(title='Average Price ($)'),
-#         zaxis=ZAxis(title='Total Revenue (S)')
-#     )
-# )
-# mainFig.layout=layout
-# mainFig.update_layout(
-# height = 1000
-# )
-
