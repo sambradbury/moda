@@ -23,7 +23,7 @@ if submit_button:
     pre_conf_data = source_data.loc[
                                 source_data['Test Strategy'].isin([test_strategy])
                                 & source_data['Model Name'].isin(model_names)]
-    pre_fig = px.line(pre_conf_data, x=y_ax_metric, y='Pre-Confirmation Duration (seconds)', color='Model Name')
+    pre_fig = px.line(pre_conf_data, x=y_ax_metric, y='Pre-Confirmation Duration (minutes)', color='Model Name')
     pre_fig.update_layout(
         autosize=True,
         title={
@@ -37,7 +37,7 @@ if submit_button:
     post_conf_data = source_data.loc[
                                 source_data['Test Strategy'].isin([test_strategy])
                                 & source_data['Model Name'].isin(model_names)]
-    post_fig = px.line(post_conf_data, x=y_ax_metric, y='Post-Confirmation Duration (seconds)', color='Model Name')
+    post_fig = px.line(post_conf_data, x=y_ax_metric, y='Post-Confirmation Duration (minutes)', color='Model Name')
     post_fig.update_layout(
         autosize=True,
         title={
