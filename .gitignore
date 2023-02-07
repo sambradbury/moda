@@ -1,0 +1,6 @@
+/tmp/*
+*~
+*.code-workspace
+.DS_STORE
+.vscode
+tmp
