@@ -61,22 +61,25 @@ with st.form(key='viz_settings'):
 
 if submit_button:
 
-    pre_fig = makeFig(
-        test_strategy,
-        model_names,
-        x_ax_metric,
-        y_data='Pre-Confirmation Duration (minutes)',
-        title='Pre-Confirmation Duration'
-        )
+    if model_names:
+        pre_fig = makeFig(
+            test_strategy,
+            model_names,
+            x_ax_metric,
+            y_data='Pre-Confirmation Duration (minutes)',
+            title='Pre-Confirmation Duration'
+            )
 
-    st.plotly_chart(pre_fig, use_container_width=True)
+        st.plotly_chart(pre_fig, use_container_width=True, sharing='streamlit')
 
-    post_fig = makeFig(
-        test_strategy,
-        model_names,
-        x_ax_metric,
-        y_data='Post-Confirmation Duration (minutes)',
-        title='Post-Confirmation Duration'
-        )
+        post_fig = makeFig(
+            test_strategy,
+            model_names,
+            x_ax_metric,
+            y_data='Post-Confirmation Duration (minutes)',
+            title='Post-Confirmation Duration'
+            )
 
-    st.plotly_chart(post_fig, use_container_width=True)
+        st.plotly_chart(post_fig, use_container_width=True, sharing='streamlit')
+
+    else: st.write("Error: Select at least one value for 'Model Names'")
