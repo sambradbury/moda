@@ -47,7 +47,7 @@ def makeFig(test_strategy, model_names, x_ax_metric, y_data, title):
         autosize=True,
         title={
             'text' : title,
-            'xanchor': 'center'
+            'xanchor': 'left'
             }
         )
     return fig
