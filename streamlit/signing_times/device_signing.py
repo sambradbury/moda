@@ -52,34 +52,29 @@ def makeFig(test_strategy, model_names, x_ax_metric, y_data, title):
         )
     return fig
 
-with st.form(key='viz_settings'):
-    test_strategy = st.selectbox("Test Strategy:", test_strategies, index=0)
-    model_names = st.multiselect("Model Names:", devices, default=devices)
-    x_ax_metric = st.selectbox("X-Axis Metric", ['UTXOs', 'Unsigned PSBT (kB)'], index=0)
+test_strategy = st.selectbox("Test Strategy:", test_strategies, index=0)
+model_names = st.multiselect("Model Names:", devices, default=devices)
+x_ax_metric = st.selectbox("X-Axis Metric", ['UTXOs', 'Unsigned PSBT (kB)'], index=0)
 
-    submit_button = st.form_submit_button()
+if model_names:
+    pre_fig = makeFig(
+        test_strategy,
+        model_names,
+        x_ax_metric,
+        y_data='Pre-Confirmation Duration (minutes)',
+        title='Pre-Confirmation Duration'
+        )
 
-if submit_button:
+    st.plotly_chart(pre_fig, use_container_width=True, sharing='streamlit')
 
-    if model_names:
-        pre_fig = makeFig(
-            test_strategy,
-            model_names,
-            x_ax_metric,
-            y_data='Pre-Confirmation Duration (minutes)',
-            title='Pre-Confirmation Duration'
-            )
+    post_fig = makeFig(
+        test_strategy,
+        model_names,
+        x_ax_metric,
+        y_data='Post-Confirmation Duration (minutes)',
+        title='Post-Confirmation Duration'
+        )
 
-        st.plotly_chart(pre_fig, use_container_width=True, sharing='streamlit')
+    st.plotly_chart(post_fig, use_container_width=True, sharing='streamlit')
 
-        post_fig = makeFig(
-            test_strategy,
-            model_names,
-            x_ax_metric,
-            y_data='Post-Confirmation Duration (minutes)',
-            title='Post-Confirmation Duration'
-            )
-
-        st.plotly_chart(post_fig, use_container_width=True, sharing='streamlit')
-
-    else: st.write("Error: Select at least one value for 'Model Names'")
+else: st.write("Error: Select at least one value for 'Model Names'")
